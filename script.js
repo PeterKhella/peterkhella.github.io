@@ -126,3 +126,15 @@ function factSwither(event) {
 }
 
 factSwither();
+
+
+document.getElementById("email").addEventListener("click", function () {
+    document.querySelector(".email-form").classList.add("open");
+    // document.getElementById("hamburger").classList.add("off");
+    // document.getElementById("hamburger-close").classList.remove("off");
+});
+document.getElementById("email-close").addEventListener("click", function () {
+    document.querySelector(".email-form").classList.remove("open");
+    // document.getElementById("hamburger").classList.remove("off");
+    // document.getElementById("hamburger-close").classList.add("off");
+});

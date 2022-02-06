@@ -59,7 +59,7 @@ h3{
     height: 75px;
     margin: 0px;
 }
-#hamburger-close{
+#hamburger-close, #email-close{
     justify-content: flex-end;
     align-items: flex-end;
     width: 25px;
@@ -213,7 +213,7 @@ li{
     justify-content: center;
     align-items: center;
 }
-.btn:hover, .random-btn:hover{
+.btn:hover, .random-btn:hover, .email-btn:hover{
     padding: 3px;
     border-radius: 5px;
     background-color: rgb(235, 232, 232, 10%);
@@ -265,7 +265,7 @@ li{
     opacity: 0.7;
 }
 
-.random-btn{
+.random-btn, .email-btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,6 +293,24 @@ li{
     justify-content: center;
     align-items: center;
 }
+
+.email-form{
+    display: none;
+    color: white;
+    top: 75px;
+    width: 100%;
+    height: 350px;
+    transform: translateX(center);
+    transform: translateY(-350px);
+    background-color: rgba(41, 51, 45, 0.8);
+    transition: all 250ms ease-in-out;
+}
+.email-form.open{
+    position: fixed;
+    display: grid;
+    transform: translateY(350px);
+}
+
 @media screen and (min-width: 475px) {
 
     .h2{
