@@ -1,5 +1,7 @@
 const MENU_HEIGHT = 75;
 
+//menu scroll feature
+
 const homeLink = document.getElementById("home-link");
 const projectsLink = document.getElementById("projects-link");
 const hobbiesLink = document.getElementById("hobbies-link");
@@ -30,7 +32,8 @@ function scrollToElement(id) {
 
 }
 
-// event listeners
+// event listeners for menu buttons
+
 homeLink.addEventListener("click", function (event) {
     event.preventDefault();
     event.stopPropagation();
@@ -56,6 +59,7 @@ aboutLink.addEventListener("click", function (event) {
     activateLink(aboutLink);
 });
 
+
 //menu open and close
 //listen for clicks on hamburger icon
 document.getElementById("hamburger").addEventListener("click", function () {
@@ -72,24 +76,53 @@ document.getElementById("hamburger-close").addEventListener("click", function ()
 
 });
 
+
+//photo slide for projects 
+
 const channel = document.querySelectorAll('.channel');
 console.log(channel);
 
-for(let i=0; i < channel.length; i++){
-  console.log('channel array position', i, channel[i]);
-  channel[i].addEventListener('click', imageSwitcher);
+for (let i = 0; i < channel.length; i++) {
+    console.log('channel array position', i, channel[i]);
+    channel[i].addEventListener('click', imageSwitcher);
 }
 
-function imageSwitcher(event){
-console.log(event, "hello");
-  
-  if(event.target.innerText === '1') {
-    document.querySelector('#slide-screen img').setAttribute('src','./images/Artistic Imp/Log In.jpeg');
+function imageSwitcher(event) {
+    console.log(event, "hello");
+
+    if (event.target.innerText === '1') {
+        document.querySelector('#slide-screen img').setAttribute('src', './images/Artistic Imp/Log In.jpeg');
+    }
+    else if (event.target.innerText === '2') {
+        document.querySelector('#slide-screen img').setAttribute('src', './images/Artistic Imp/Squid Games.jpeg');
+    }
+    else if (event.target.innerText === '3') {
+        document.querySelector('#slide-screen img').setAttribute('src', './images/Artistic Imp/The Chosen One.jpeg');
+    }
 }
-  else if(event.target.innerText === '2') {
-    document.querySelector('#slide-screen img').setAttribute('src','./images/Artistic Imp/Squid Games.jpeg');
+
+// random button
+const randomButton = document.getElementById("randombtn");
+const random = document.querySelectorAll('.random');
+randomButton.addEventListener('click', factSwither);
+
+console.log(random);
+// define arrays
+for (let i = 0; i < random.length; i++) {
+    console.log('random array position', i, random[i]);
 }
-  else if(event.target.innerText === '3') {
-    document.querySelector('#slide-screen img').setAttribute('src','./images/Artistic Imp/The Chosen One.jpeg');
+//pick random
+function factSwither(event) {
+    
+    const start = 0;
+    const end = random.length - 1;
+    const selected = Math.floor(Math.random() * (end - start + 1) + start);
+    const selectedEl = random[selected];
+
+    random.forEach(function (rand) {
+    rand.classList.remove("show");
+    });
+    selectedEl.classList.add('show');
 }
-}
+
+factSwither();

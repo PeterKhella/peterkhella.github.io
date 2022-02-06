@@ -118,14 +118,6 @@ li{
     justify-content: center;
     align-items: center;
 }
-/* .artistic-slide{
-    display: flex;
-    margin-bottom: 10px;
-    width: 100%;
-    min-height: 30vh;
-    border: solid grey 1px;
-
-} */
 
 .slide-screen{
     display: flex;
@@ -177,16 +169,10 @@ li{
 
 .hobbies-list{
     display: grid;
-    text-align: center;
-    justify-content: space-around;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
 
-}
-.cars, .games, .sports{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
 }
 .h-images{
     display: flex;
@@ -227,7 +213,7 @@ li{
     justify-content: center;
     align-items: center;
 }
-.btn:hover{
+.btn:hover, .random-btn:hover{
     padding: 3px;
     border-radius: 5px;
     background-color: rgb(235, 232, 232, 10%);
@@ -278,8 +264,35 @@ li{
     color:#ebc312;
     opacity: 0.7;
 }
-  
 
+.random-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(199, 195, 195, 0.527);
+    width: 150px;
+    letter-spacing: 1px;
+    text-shadow: -2px 1px rgb(117, 114, 114, 0.8);
+}
+.random-btn:hover{
+    cursor: pointer;
+    color: #ebc312;
+
+}
+/* .mustang, .one-civic, .one-integra, .two-integra, .runescape, .magic, .rocket-league, .ladodgers, .lalakers, .eagles, .ufc, .forza {
+    display: none;
+} */
+.random{
+    display: none;
+}
+.random.show{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (min-width: 475px) {
 
     .h2{
@@ -344,7 +357,7 @@ li{
 }
 
 @media screen and (min-width: 1100px) {
-    .about-list{
+    .about-list .random.show{
         display: flex;
         margin: 0px 40px;
     }
