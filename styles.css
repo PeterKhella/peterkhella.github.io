@@ -293,6 +293,9 @@ li {
 a {
   text-decoration: none;
 }
+.random p{
+  font-size: 20px;
+}
 
 
 .random-btn:hover,
