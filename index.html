@@ -1,11 +1,12 @@
-<document! html>
-    <html>
-    <!-- THANKS FOR VISITING MY CODE!! -->
-
+<!DOCTYPE html>
+<html>
     <head>
-        <meta charset="utf-8">
+    <!-- THANKS FOR VISITING MY CODE!! -->
+    <!-- Add me on github :) -->
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="/styles.css?v=1">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Peters Portfolio</title>
@@ -17,7 +18,7 @@
             <ul class="menu">
                 <li><a href="#" class="btn udrline" id="home-link">Home</a></li>
                 <li><a href="#" class="btn" id="projects-link">Projects</a></li>
-                <li><a href="#" class="btn" id="hobbies-link">Facts</a></li>
+                <li><a href="#" class="btn" id="hobbies-link">Fun Button</a></li>
                 <li><a href="#" class="btn" id="about-link">About</a></li>
                 <li><a href="files/Peter Khella Resume_8.14.22.pdf" target="_blank" class="btn"
                         id="resume-link">Resume</a></li>
@@ -31,7 +32,9 @@
             <div class="home-containter">
                 <div class="home-title">
                     <h1 class="head">Peter Khella</h1>
-                    <h2>the untold story of a mechanics journey to becoming a web developer</h2>
+                    <h2>the untold story of a mechanics journey
+                        from debugging broken cars to debugging broken code 
+                    </h2>
                 </div>
             </div>
         </section>
@@ -39,8 +42,9 @@
         <section id="projects" class="content-container">
             <h1 class="section-title">Current Projects</h1>
             <div class="projects-list">
-                <div id="artistic-container" class="artistic-container">
-                    <h3><a href="http://artisticimp.epizy.com"link">React eCommerce Site for Artistic Imp</a></h3>
+                <div id="artistic-container" class="artistic-container preview-btn" link>                    
+                    <a href="http://artisticimp.epizy.com" link>
+                    <!-- Old Sliding Images 
                     <div id="slide-screen" class="slide-screen">
                         <img src="images/Artistic Imp/Log In.jpeg" alt="">
                     </div>
@@ -48,20 +52,33 @@
                         <li class="channel" id="one">1</li>
                         <li class="channel" id="two">2</li>
                         <li class="channel" id="three">3</li>
-                    </ul>
+                    </ul> -->
+                    <img src="./images/artistic-imp-preview.png" class="preview" alt="" srcset="" link>
+                        <h3 class="">React eCommerce Site for Artistic Imp</h3>
+                    </a>
+                </div>
+                <div class="psd-project preview-btn">                    
+                    <a href="/portfolio-projects/PSD-Project/index.html" link>
+                    <img src="./portfolio-projects/PSD-Project/Original.jpg" class="preview" alt="" srcset="">
 
+                        <h3 class="">PSD to HTML/CSS</h3>
+                    </a>
                 </div>
                 <div>
                 </div>
             </div>
-        </section>
-        <!-- Hobbies Container -->
-        <section id="hobbies" class="content-container">
-            <h1 class="section-title">Random Button</h1>
-            <div class="hobbies-list">
-                <div id="randombtn" class="random-btn" a href="#">Click Me</div>
-                <div class="about-list">
-                    <div class="random"><img id="mustang" class="mustang h-images"
+            </section>
+         <!-- Hobbies Container -->
+            <section id="hobbies" class="content-container">
+                <h1 class="section-title">Fun Random Button</h1> 
+                <div class="hobbies-list">
+                    <div id="randombtn" class="random-btn" a href="#">Click Me</div>
+                    <p>
+                        You never know what you're going to get!
+                    </p>
+                    <div class="about-list">
+                    <div class="random">
+                        <img id="mustang" class="mustang h-images"
                             src="images/Cars/1972-ford-mustang.jpeg">
                         <div>
                             <p class="mustang">So about this car... My dad bought this car back in 1989 when I was
@@ -71,7 +88,8 @@
                                 rebuilt!</p>
                         </div>
                     </div>
-                    <div class="random"><img id="one-civic" class=" one-civic h-images" src="images/Cars/88 civic.jpeg">
+                    <div class="random">
+                        <img id="one-civic" class=" one-civic h-images" src="images/Cars/88 civic.jpeg">
                         <p class="one-civic">The 1988-91 Honda Civic hatchback was actually my very first Honda. I did
                             not
                             own
@@ -90,7 +108,8 @@
                             low.
                             I knew it was trouble and had to part ways. Some days I still miss it.</p>
                     </div>
-                    <div class="random"><img id="one-integra" class=" two-integra h-images"
+                    <div class="random">
+                        <img id="one-integra" class=" two-integra h-images"
                             src="images/Cars/2001-Acura-Integra-Type-R-004.jpeg">
                         <p class="one-integra">The 1994-01 Acura Integra is a car I still own til this day. I purchased
                             more
@@ -99,7 +118,8 @@
                             keep it
                             long enough for my kids to see. A true Japanese beauty.</p>
                     </div>
-                    <div class="random"><img id="runescape" class=" runescape h-images"
+                    <div class="random">
+                        <img id="runescape" class=" runescape h-images"
                             src="images/Games/Old_School_RuneScape_logo.png">
                         <p class="runescape">Congrats!!! I can't believe you actually got to this fact. Probably one of
                             the
@@ -127,7 +147,8 @@
                             decided it
                             was time to quit again and learn how to code.</p>
                     </div>
-                    <div class="random"><img id="magic" class=" magic h-images" src="images/Games/Magic Logo.png">
+                    <div class="random">
+                        <img id="magic" class=" magic h-images" src="images/Games/Magic Logo.png">
                         <p class="magic">Magic the Gathering, I played this trading card game during middle school and
                             high
                             school. I had a huge collection that my mom took away from me as it was distracting me from
@@ -138,40 +159,57 @@
                     </div>
                     <!-- <div class="random"><img id="rocket-league" class=" rocket-league h-images"
                             src="images/Games/rocket league logo.png"></div> -->
-                    <div class="random"><img id="forza" class=" forza h-images" src="images/Games/forza logo.png">
+                    <div class="random">
+                        <img id="forza" class=" forza h-images" src="images/Games/forza logo.png">
                     <p>My passion for cars never went away... I went from long nights under a car getting dirty to long nights behind the computer staying clean. Forza gave me the ability to build cars while at the same time keeping my nails clean.</p>
                     </div>
-                    <div class="random"><img id="ufc" class=" ufc h-images" src="images/Sports/1280px-UFC_Logo.svg.png">
+                    <div class="random">
+                        <img id="ufc" class=" ufc h-images" src="images/Sports/1280px-UFC_Logo.svg.png">
                     <p>McGregor Will Return!</p>
                     </div>
-                    <div class="random"><img id="eagles" class=" eagles h-images" src="images/Sports/Eagles Logo.png">
+                    <div class="random">
+                        <img id="eagles" class=" eagles h-images" src="images/Sports/Eagles Logo.png">
                         <p class="eagles">The Philadelphia Eagles. Growing up I was never really in to football but I
                             loved
                             the Philadelphia cream cheese. Even though they are unrelated, I have rooted the Eagles all
                             my
                             life due to my love from cream cheese. I guess you can say I'm a die hard fan</p>
                     </div>
+                
+                    <div class="random">
+                        <img id="lalakers" class=" lalakers h-images" src="images/Sports/los angeles logo.svg.png">
+                        <p>Go Lakers!</p>    
+                     </div>
+                    <div class="random">
+                        <img id="ladodgers" class=" ladodgers h-images" src="images/Sports/Los_Angeles_Dodgers_Logo.svg.png">
+                        <p>Go Dodgers</p>
+                    </div>
+
+                    <div class="random">
+                        <p>Drink Water</p>
+                    </div>
+                    <div class="random">
+                        <p>Take A Shot</p>
+                    </div>
+                    <div class="random">
+                        <p>Text Mommy</p>
+                    </div>
+                    <div class="random">
+                        <p>You Really Want To Know More About Me?</p>
+                    </div>
+                    <div class="random">
+                        <p>Try & Measure Life Differently!</p>
+                    </div>
+                    <div class="random">
+                        <p>Finish What You Started!</p>
+                    </div>
+                    <div class="random">
+                        <p>Go Read or Listen To A Book</p>
+                    </div>
                 </div>
-                <div class="random"><img id="lalakers" class=" lalakers h-images"
-                        src="images/Sports/los angeles logo.svg.png">
-                <p>Go Lakers!</p>    
-                </div>
-                <div class="random"><img id="ladodgers" class=" ladodgers h-images"
-                        src="images/Sports/Los_Angeles_Dodgers_Logo.svg.png">
-                <p>Go Dodgers</p>
-                </div>
-            </div>
-            <div class="random"><p>Drink Water</p>
-            </div>
-            <div class="random"><p>Take A Shot</p>
-            </div>
-            <div class="random"><p>Text Your Mom</p>
-            </div>
-            <div class="random"><p>You Really Want To Know More About Me?</p>
-            </div>
-            
-        </div>
-        </section>
+
+            </section>
+
         <!-- About Container -->
         <section id="about" class="content-container">
             <h1 class="section-title">About</h1>
@@ -242,9 +280,21 @@
                 </div>
             </div> -->
             <div class="social-media">
-                <div><a href="#"><img src="images/phone.png" class="con"></a></div>
-                <div><a href="https://www.linkedin.com/in/peter-khella-92b019125/"><img src="images/linked in.png"
-                            class="con"></a></div>
+                <div>
+                    <a href="#">
+                        <img src="images/phone.png" class="con">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/peter-khella-92b019125/">
+                        <img src="images/linked in.png"class="con">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/peter-khella-92b019125/">
+                        <img src="images/github-logo.png"class="con">
+                    </a>
+                </div>
             </div>
         </footer>
         <script src="script.js"></script>
